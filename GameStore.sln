@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.API", "src\GameStore.API\GameStore.API.csproj", "{3E3B31BB-DADB-46B2-BD24-6F01986C7767}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{104BCCD5-AA4F-49BA-AE00-FB0AF23AC9E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{26B103E2-4C94-4FF8-87FD-27E94143BD8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Application", "src\GameStore.Application\GameStore.Application.csproj", "{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Domain", "src\GameStore.Domain\GameStore.Domain.csproj", "{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.UnitTests", "tests\GameStore.UnitTests\GameStore.UnitTests.csproj", "{39123562-24C9-4666-9124-4D5F6174C3B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Infrastructure", "src\GameStore.Infrastructure\GameStore.Infrastructure.csproj", "{D736E211-1E7A-47BD-ABC9-E3794414020F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E3B31BB-DADB-46B2-BD24-6F01986C7767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E3B31BB-DADB-46B2-BD24-6F01986C7767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E3B31BB-DADB-46B2-BD24-6F01986C7767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E3B31BB-DADB-46B2-BD24-6F01986C7767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39123562-24C9-4666-9124-4D5F6174C3B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39123562-24C9-4666-9124-4D5F6174C3B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39123562-24C9-4666-9124-4D5F6174C3B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39123562-24C9-4666-9124-4D5F6174C3B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E3B31BB-DADB-46B2-BD24-6F01986C7767} = {104BCCD5-AA4F-49BA-AE00-FB0AF23AC9E3}
+		{EB24ACA5-2668-4E58-974C-8F94F36C6E8B} = {104BCCD5-AA4F-49BA-AE00-FB0AF23AC9E3}
+		{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28} = {104BCCD5-AA4F-49BA-AE00-FB0AF23AC9E3}
+		{39123562-24C9-4666-9124-4D5F6174C3B6} = {26B103E2-4C94-4FF8-87FD-27E94143BD8C}
+		{D736E211-1E7A-47BD-ABC9-E3794414020F} = {104BCCD5-AA4F-49BA-AE00-FB0AF23AC9E3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4D1E608-DB1A-4D74-9022-0079E2946D55}
+	EndGlobalSection
+EndGlobal
