@@ -1,8 +1,26 @@
-version: '3.4'
+version: '3.9'
 
 services:
   gamestore.api:
     image: ${DOCKER_REGISTRY-}gamestoreapi
+    container_name: gamestore.api
     build:
       context: .
       dockerfile: src/GameStore.API/Dockerfile
+    depends_on:
+      - gamestore.database
+
+  gamestore.database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: gamestore.database
+    user: root
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=123456Qw
+    ports:
+      - 1433:1433
+    volumes:
+      - mssqldata:/var/opt/mssql/data
+
+volumes:
+  mssqldata:
