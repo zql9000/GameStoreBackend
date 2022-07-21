@@ -3,19 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.API", "src\GameStore.API\GameStore.API.csproj", "{3E3B31BB-DADB-46B2-BD24-6F01986C7767}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStore.API", "src\GameStore.API\GameStore.API.csproj", "{3E3B31BB-DADB-46B2-BD24-6F01986C7767}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{104BCCD5-AA4F-49BA-AE00-FB0AF23AC9E3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{26B103E2-4C94-4FF8-87FD-27E94143BD8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Application", "src\GameStore.Application\GameStore.Application.csproj", "{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStore.Application", "src\GameStore.Application\GameStore.Application.csproj", "{EB24ACA5-2668-4E58-974C-8F94F36C6E8B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Domain", "src\GameStore.Domain\GameStore.Domain.csproj", "{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStore.Domain", "src\GameStore.Domain\GameStore.Domain.csproj", "{6111DDDF-C424-4FAB-ABF5-5CDEB7B04D28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.UnitTests", "tests\GameStore.UnitTests\GameStore.UnitTests.csproj", "{39123562-24C9-4666-9124-4D5F6174C3B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStore.UnitTests", "tests\GameStore.UnitTests\GameStore.UnitTests.csproj", "{39123562-24C9-4666-9124-4D5F6174C3B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameStore.Infrastructure", "src\GameStore.Infrastructure\GameStore.Infrastructure.csproj", "{D736E211-1E7A-47BD-ABC9-E3794414020F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameStore.Infrastructure", "src\GameStore.Infrastructure\GameStore.Infrastructure.csproj", "{D736E211-1E7A-47BD-ABC9-E3794414020F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{BBB79BFB-907B-41D3-AC96-EBAE839CBAF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D736E211-1E7A-47BD-ABC9-E3794414020F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBB79BFB-907B-41D3-AC96-EBAE839CBAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBB79BFB-907B-41D3-AC96-EBAE839CBAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBB79BFB-907B-41D3-AC96-EBAE839CBAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBB79BFB-907B-41D3-AC96-EBAE839CBAF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
