@@ -25,7 +25,7 @@ namespace GameStore.Infrastructure.Support
         private static void RegisterRepositories(IServiceCollection services)
         {
             services.AddTransient<IUnitOfWork, UnitOfWork>();
-            //services.AddTransient<IGenreRepository, GenreRepository>();
+            services.AddTransient<IGenreRepository, GenreRepository>();
         }
     }
 }
