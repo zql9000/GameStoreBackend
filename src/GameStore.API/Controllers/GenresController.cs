@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace GameStore.API.Controllers
 {
     [Route("api/[controller]")]
+    [Produces("application/json")]
     [ApiController]
     public class GenresController : ControllerBase
     {
@@ -17,20 +18,33 @@ namespace GameStore.API.Controllers
 
         // GET: api/<GenresController>
         [HttpGet]
-        public IEnumerable<string> Get()
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(IEnumerable<GenreDto>))]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IEnumerable<GenreDto> Get()
         {
-            return new string[] { "value1", "value2" };
+            var genres = _genreService.GetAll();
+            return genres;
         }
 
         // GET api/<GenresController>/5
         [HttpGet("{id}")]
-        public string Get(int id)
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(GenreDto))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<GenreDto> Get(int id)
         {
-            return "value";
+            var genre = _genreService.GetById(id);
+
+            if (genre is null) return NotFound();
+
+            return genre;
         }
 
         // POST api/<GenresController>
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created, Type = typeof(GenreDto))]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> Post([FromBody] GenreDto genre)
         {
             var newGenre = await _genreService.Create(genre);

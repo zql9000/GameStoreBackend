@@ -42,12 +42,22 @@ namespace GameStore.Application.Services.Implementation
 
         public IEnumerable<GenreDto> GetAll()
         {
-            throw new NotImplementedException();
+            IEnumerable<GenreDto> genres;
+
+            var genresData = _genreRepository.GetEntities();
+            genres = _mapper.Map<IEnumerable<GenreDto>>(genresData);
+
+            return genres;
         }
 
         public GenreDto GetById(int genreId)
         {
-            throw new NotImplementedException();
+            GenreDto? genre = null;
+
+            var genreData = _genreRepository.GetById(genreId);
+            genre = _mapper.Map<GenreDto>(genreData);
+
+            return genre;
         }
 
         public Task<GenreDto> Update(GenreDto genre)

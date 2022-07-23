@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using GameStore.Application.Base;
+using System.ComponentModel.DataAnnotations;
 
 namespace GameStore.Application.DTOs
 {
-    public class GenreDto
+    public class GenreDto : BaseModel
     {
         [Required(ErrorMessage = "La descripción es obligatoria")]
         [MinLength(3, ErrorMessage = "La descripción debe poseer un minimo de 3 caracteres")]
