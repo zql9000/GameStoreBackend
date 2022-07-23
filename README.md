@@ -1,6 +1,6 @@
 # GameStoreBackend
 
-```
+```mermaid
 erDiagram
 Genre ||--|{ Game : has
 Game ||--|{ Purchase : sold
