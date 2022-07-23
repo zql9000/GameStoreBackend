@@ -1,6 +1,8 @@
-﻿namespace GameStore.Domain.Entities
+﻿using GameStore.Domain.Base;
+
+namespace GameStore.Domain.Entities
 {
-    public class Country
+    public class Country : BaseModel
     {
         public string Name { get; set; } = string.Empty;
     }

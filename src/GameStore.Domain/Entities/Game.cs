@@ -9,5 +9,8 @@ namespace GameStore.Domain.Entities
         public string Synopsis { get; set; } = string.Empty;
         public decimal Price { get; set; }
         public int DeveloperId { get; set; }
+
+        public Genre Genre { get; set; }
+        public Developer Developer { get; set; }
     }
 }
