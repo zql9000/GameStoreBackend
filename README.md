@@ -1,6 +1,6 @@
 # GameStoreBackend
 
-´´´
+```
 erDiagram
 Genre ||--|{ Game : has
 Game ||--|{ Purchase : sold
@@ -48,5 +48,4 @@ Developer ||--|{ Game : create
         DateTime Date
         decimal Price
     }
-
-´´´
+```
